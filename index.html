@@ -1,5 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Kettle Labs</title></head>
-<body><h1>Kettle Labs</h1></body>
+<head>
+	<title>Kettle Labs</title>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/lumen/bootstrap.min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.kettle.jumbotron {
+			position:relative;
+			background:transparent;
+			padding-top:96px; padding-bottom:96px;
+		}
+		.kettle.jumbotron:before {
+			content:'';
+			position:absolute;
+			display:block;
+			top:0;left:0;right:0;bottom:0;
+			background:transparent url('/img/bgcity.jpg') no-repeat center center;
+			background-size:cover;
+			-webkit-filter:grayscale(70%);
+			z-index:-1;
+			opacity:0.25;
+		}
+		.kettle.jumbotron h1 { font-size:500%; }
+
+		.our-work { padding-top:32px; padding-bottom:64px; }
+		.our-work .glyphicon {
+			font-size:1000%;
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron kettle">
+		<div class="container-fluid">
+			<h1 class="text-center"><object class="logo" alt="logo" type="image/svg+xml" data="logo.svg"></object></h1>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row our-work">
+			<div class="col-sm-4 text-center">
+				<i class="glyphicon glyphicon-cog"></i>
+				<h3>Engineering</h3>
+			</div>
+			<div class="col-sm-4 text-center">
+				<i class="glyphicon glyphicon-blackboard"></i>
+				<h3>Design</h3>
+			</div>
+			<div class="col-sm-4 text-center">
+				<i class="glyphicon glyphicon-globe"></i>
+				<h3>Consulting</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10">
+					<h2>want to work with us?</h2>
+				</div>
+			</div>
+			<div class="row">
+				<form class="col-sm-offset-1 col-sm-10" method="POST" action="https://docs.google.com/a/kettlelabs.com/forms/d/1K258dFTlcCEBOYv-qeohCaxdI7yaQZNf5dBdQu7Yf6c/formResponse">
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="entry.952125119">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="3" id="exampleInputInquiry1" name="entry.1156642576"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default">Send Inquiry</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid">
+		<p class="text-center">
+			&copy; 2015 Kettle Labs, Inc.<br />
+			<sup>proudly made <i class="glyphicon glyphicon-heart"></i> in San Francsico</sup>
+		</p>
+	</footer>
+
+</body>
 </html>
