@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 	<title>Kettle Labs</title>
+
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/lumen/bootstrap.min.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.0.3/wow.min.js"></script>
+
 	<style type="text/css">
 		.kettle.jumbotron {
 			position:relative;
@@ -22,6 +27,7 @@
 			z-index:-1;
 			opacity:0.25;
 		}
+		.kettle.jumbotron:hover:before { opacity:0.35; }
 		.kettle.jumbotron h1 { font-size:500%; }
 
 		.our-work { padding-top:32px; padding-bottom:64px; }
@@ -35,23 +41,23 @@
 <body>
 	<div class="jumbotron kettle">
 		<div class="container-fluid">
-			<h1 class="text-center"><object class="logo" alt="logo" type="image/svg+xml" data="logo.svg"></object></h1>
+			<h1 class="text-center wow fadeInDown"><object class="logo" alt="logo" type="image/svg+xml" data="logo.svg"></object></h1>
 		</div>
 	</div>
 
 	<div class="container-fluid">
 		<div class="row our-work">
-			<div class="col-sm-4 text-center">
-				<i class="glyphicon glyphicon-cog"></i>
-				<h3>Engineering</h3>
-			</div>
-			<div class="col-sm-4 text-center">
+			<div class="col-sm-4 col-xs-6 text-center wow fadeIn" data-wow-delay="0.5s">
 				<i class="glyphicon glyphicon-blackboard"></i>
-				<h3>Design</h3>
+				<h3>design</h3>
 			</div>
-			<div class="col-sm-4 text-center">
+			<div class="col-sm-4 col-xs-6 text-center wow fadeIn" data-wow-delay="0.25s">
+				<i class="glyphicon glyphicon-cog"></i>
+				<h3>engineering</h3>
+			</div>
+			<div class="col-sm-4 col-xs-6 text-center wow fadeIn" data-wow-delay="0.75s">
 				<i class="glyphicon glyphicon-globe"></i>
-				<h3>Consulting</h3>
+				<h3>consulting</h3>
 			</div>
 		</div>
 	</div>
@@ -82,6 +88,8 @@
 			<sup>proudly made <i class="glyphicon glyphicon-heart"></i> in San Francsico</sup>
 		</p>
 	</footer>
+
+	<script>new WOW().init();</script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
