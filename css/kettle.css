@@ -17,10 +17,18 @@
 .kettle.jumbotron:hover:before { opacity:0.35; }
 .kettle.jumbotron h1 { font-size:500%; }
 
-.our-work { padding-top:32px; padding-bottom:64px; }
-.our-work .glyphicon {
-	font-size:1000%;
+.our-work { padding-bottom:32px; }
+.our-work .panel:not(:hover) {
+	border-color:transparent;
+	box-shadow:none;
 }
+.our-work .panel-default:not(:hover) .panel-heading {
+	background-color:transparent;
+}
+.our-work .glyphicon { font-size:1000%; }
+.our-work .panel-default.eng:hover * { color:#34495E; }
+.our-work .panel-default.design:hover * { color:#16A085; }
+.our-work .panel-default.consult:hover * { color:#2980B9; }
 
 .logo { max-width:90%; }
 footer a { color:inherit; }
@@ -28,8 +36,5 @@ footer a:hover .fa-facebook-square { color:#3B5998; }
 footer a:hover .fa-linkedin { color:#007bb6; }
 footer .social { font-size:200%; }
 
-.our-work .glyphicon-cog:hover { color:#34495E; }
-.our-work .glyphicon-blackboard:hover { color:#16A085; }
-.our-work .glyphicon-globe:hover { color:#2980B9; }
 
 .made-with:hover .glyphicon-heart { color:#E74C3C; }
