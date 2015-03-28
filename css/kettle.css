@@ -1,0 +1,33 @@
+.kettle.jumbotron {
+	position:relative;
+	background:transparent;
+	padding-top:96px; padding-bottom:96px;
+}
+.kettle.jumbotron:before {
+	content:'';
+	position:absolute;
+	display:block;
+	top:0;left:0;right:0;bottom:0;
+	background:transparent url('/img/bgcity.jpg') no-repeat center center;
+	background-size:cover;
+	-webkit-filter:grayscale(70%);
+	z-index:-1;
+	opacity:0.25;
+}
+.kettle.jumbotron:hover:before { opacity:0.35; }
+.kettle.jumbotron h1 { font-size:500%; }
+
+.our-work { padding-top:32px; padding-bottom:64px; }
+.our-work .glyphicon {
+	font-size:1000%;
+}
+
+.logo { max-width:90%; }
+footer a { color:inherit; }
+footer a:hover .fa-facebook-square { color:#3B5998; }
+footer a:hover .fa-linkedin { color:#007bb6; }
+footer .social { font-size:200%; }
+
+.our-work .glyphicon-cog:hover { color:#34495E; }
+.our-work .glyphicon-blackboard:hover { color:#16A085; }
+.our-work .glyphicon-globe:hover { color:#2980B9; }

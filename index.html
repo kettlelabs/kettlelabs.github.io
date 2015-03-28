@@ -4,39 +4,13 @@
 	<title>Kettle Labs</title>
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/lumen/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/kettle.css">
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.0.3/wow.min.js"></script>
-
-	<style type="text/css">
-		.kettle.jumbotron {
-			position:relative;
-			background:transparent;
-			padding-top:96px; padding-bottom:96px;
-		}
-		.kettle.jumbotron:before {
-			content:'';
-			position:absolute;
-			display:block;
-			top:0;left:0;right:0;bottom:0;
-			background:transparent url('/img/bgcity.jpg') no-repeat center center;
-			background-size:cover;
-			-webkit-filter:grayscale(70%);
-			z-index:-1;
-			opacity:0.25;
-		}
-		.kettle.jumbotron:hover:before { opacity:0.35; }
-		.kettle.jumbotron h1 { font-size:500%; }
-
-		.our-work { padding-top:32px; padding-bottom:64px; }
-		.our-work .glyphicon {
-			font-size:1000%;
-		}
-
-		.logo { max-width:90%; }
-	</style>
 </head>
 <body>
 	<div class="jumbotron kettle">
@@ -82,11 +56,22 @@
 			</div>
 		</div>
 	</div>
-	<footer class="container-fluid">
-		<p class="text-center">
-			&copy; 2015 Kettle Labs, Inc.<br />
-			<sup>proudly made <i class="glyphicon glyphicon-heart"></i> in San Francsico</sup>
-		</p>
+	<footer class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p>
+					&copy; 2015 Kettle Labs, Inc.<br />
+					<sup>proudly made <i class="glyphicon glyphicon-heart"></i> in San Francsico</sup>
+				</p>
+			</div>
+			<div class="col-xs-6">
+				<p class="text-right social">
+					<a href="https://www.facebook.com/kettlelabs" target="_blank"><i class="fa fa-facebook-square"></i></a>
+					&nbsp;
+					<a href="https://www.linkedin.com/company/kettle-labs" target="_blank"><i class="fa fa-linkedin"></i></a>
+				</p>
+			</div>
+		</div>
 	</footer>
 
 	<script>new WOW().init();</script>
