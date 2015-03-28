@@ -31,3 +31,5 @@ footer .social { font-size:200%; }
 .our-work .glyphicon-cog:hover { color:#34495E; }
 .our-work .glyphicon-blackboard:hover { color:#16A085; }
 .our-work .glyphicon-globe:hover { color:#2980B9; }
+
+.made-with:hover .glyphicon-heart { color:#E74C3C; }
