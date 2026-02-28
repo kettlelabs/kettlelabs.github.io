@@ -1,4 +1,3 @@
-kettlelabs.github.io
-====================
+# Kettle Labs
 
 kettlelabs landing page
